@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css">
+</head>
+
+<body class="bg-gray-800" >
+  <div class="flex justify-center items-center absolute md:relative p-10">
+    <div class="p-5 bg-gray-100 rounded-lg ring-1 ring-gray-400 shadow-black shadow-xl ">
+  <div class="container mx-auto px-20  ">
+    <div class="my-8">
+      <h1 class="text-2xl font-bold mb-2">Todo List App</h1>
+      <form class="flex items-center" id="add-task-form">
+        <input class="rounded-lg px-3 py-2 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
+          name="task" type="text" placeholder="Add a new task" required>
+        <button class=" ml-3 px-6 py-2 rounded-lg bg-blue-500 text-white font-bold" type="submit">Add Task</button>
+      </form>
+    </div>
+    <div class="my-8">
+      <h2 class="text-lg font-bold mb-2">Task List</h2>
+      <div id="task-list"></div>
+    </div>
+    <div class="my-8">
+      <h2 class="text-lg font-bold mb-2">Completed Tasks</h2>
+      <div id="completed-task-list"></div>
+    </div>
+  </div></div> </div>
+  <script>
+
+  </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
