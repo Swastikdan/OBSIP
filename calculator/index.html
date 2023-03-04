@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Calculator</title>
+  <link rel="shortcut icon" href="https://www.swastikdan.tech/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="bg-gray-200">
+  <div class="container mx-auto p-4 w-auto max-w-[600px]">
+    <div class="bg-white rounded-xl shadow-2xl ring-1 ring-gray-300 shadow-gray-400 p-4">
+      <div class="flex flex-col justify-between mb-4">
+        <div class="font-bold text-4xl pb-5">Calculator</div>
+        <div hidden class="text-gray-500" id="history"></div>
+        <div class="mt-4">
+          <input type="text" class="w-full p-4 bg-gray-100 rounded text-right ring-1 ring-gray-500 text-3xl font-bold"
+            id="display" />
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-4">
+        <button
+          class="btn bg-gray-300 hover:bg-gray-400 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('/')">÷</button>
+        <button
+          class="btn bg-gray-300 hover:bg-gray-400 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="backspace()">←</i></button>
+        <button
+          class="btn col-span-2 bg-gray-300 hover:bg-gray-400 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="clearDisplay()">C</button>
+
+        <button
+          class="btn bg-gray-300 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('*')">×</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('7')">7</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('8')">8</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('9')">9</button>
+        <button
+          class="btn bg-gray-300 hover:bg-gray-400 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('-')">-</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('4')">4</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('5')">5</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('6')">6</button>
+        <button
+          class="btn bg-gray-300 hover:bg-gray-400 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('+')">+</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('1')">1</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('2')">2</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('3')">3</button>
+        <button
+          class="btn col-span-2 bg-blue-500 hover:bg-blue-600 text-white flex items-center justify-center rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="calculate()">
+          =</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('0')">0</button>
+        <button
+          class="btn bg-gray-100 hover:bg-gray-200 rounded-md shaodw-black shadow-md active:shadow-none text-3xl font-semibold text-center py-3"
+          onclick="addToDisplay('.')">.</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden-btns.show {
+  max-width: 600px;
+  transition: max-width 0.5s ease-in;
+  transition: smooth;
+}
+    </style>
+</head>
+
+<body>
+<br>
+<br>
+<div class="btn-container flex flex-no-wrap items-center space-x-5">
+  <button class="main-btn text-xl md:text-2xl text-black px-10 py-1 rounded-3xl bg-slate-500 font-bold   ">Menu</button>
+  <div class="hidden-btns flex flex-no-wrap overflow-hidden max-w-0 space-x-5  " style="transition: max-width 0.5s ease-out;">
+    <button class="text-xl md:text-2xl text-black px-10 py-1 rounded-3xl bg-slate-500 font-bold ">Button</button>
+    <button class="text-xl md:text-2xl text-black px-10 py-1 rounded-3xl bg-slate-500 font-bold ">Button</button>
+    <button class="text-xl md:text-2xl text-black px-10 py-1 rounded-3xl bg-slate-500 font-bold ">Button</button>
+  </div>
+</div>
+ 
+    <script src="./script.js">
+
+    </script>
+</body>
+
+</html>
+
