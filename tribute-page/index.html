@@ -2,36 +2,149 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .hidden-btns.show {
-  max-width: 600px;
-  transition: max-width 0.5s ease-in;
-  transition: smooth;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribute Page</title>
+  <link rel="shortcut icon" href="https://www.swastikdan.tech/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-<br>
-<br>
-<div class="btn-container flex flex-no-wrap items-center space-x-5">
-  <button class="main-btn text-xl md:text-2xl text-black px-10 py-1 rounded-3xl bg-slate-500 font-bold   ">Menu</button>
-  <div class="hidden-btns flex flex-no-wrap overflow-hidden max-w-0 space-x-5  " style="transition: max-width 0.5s ease-out;">
-    <button class="text-xl md:text-2xl text-black px-10 py-1 rounded-3xl bg-slate-500 font-bold ">Button</button>
-    <button class="text-xl md:text-2xl text-black px-10 py-1 rounded-3xl bg-slate-500 font-bold ">Button</button>
-    <button class="text-xl md:text-2xl text-black px-10 py-1 rounded-3xl bg-slate-500 font-bold ">Button</button>
-  </div>
-</div>
- 
-    <script src="./script.js">
+<body class="font-mono">
 
-    </script>
+  <div class="btn-container flex flex-no-wrap items-center space-x-5 top-5 left-5 fixed z-50">
+    <button class="main-btn rounded-md hover:ring-1 hover:ring-white  bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30 pt-1 px-2 ">
+      <div class="container " onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </button>
+    <div class="hidden-btns flex flex-no-wrap overflow-hidden max-w-0 space-x-1 "
+      style="transition: max-width 0.5s ease-out;">
+      <a href="#home"
+        class="text-base md:text-2xl  text-center px-5 py-1 font-bold h-full w-full bg-gray-600 hover:bg-gray-900 text-white rounded-lg bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30  ">Home</a>
+      <a href="#biography"
+        class="text-base md:text-2xl  text-center px-5 py-1 font-bold h-full w-full bg-gray-600 hover:bg-gray-900 text-white rounded-lg bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30  ">biography</a>
+      <a href="#galary"
+        class="text-base md:text-2xl  text-center px-5 py-1 font-bold h-full w-full bg-gray-600 hover:bg-gray-900 text-white rounded-lg bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30  ">Galary</a>
+    </div>
+  </div>
+
+  <button class="botton-5 right-5 fixed z-50">
+    <a href="#home">BAck to top</a>
+  </button>
+
+  <section id="home" class="bg-gray-900 h-screen overflow-hidden relative">
+
+    <img class=" w-screen  " src="./8625667 (2).jpg" alt="" loading="lazy"">
+  <div class=" card-text pt-40 px-20 items-center space-y-10 absolute right-0 top-0 bottom-0 w-7/12 p-5 text-white
+      text-right "
+  style=" background: rgb(0,0,0); background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.891281512605042)
+      40%, rgba(0,0,0,0.8044467787114846) 50%, rgba(0,0,0,0.6980042016806722) 60%, rgba(0,0,0,0.6027661064425771) 70%,
+      rgba(0,0,0,0.3982843137254902) 80%, rgba(0,0,0,0.19940476190476186) 90%, rgba(0,0,0,0) 100%);">
+    <div class="logo flex flex-col space-y-5 text-6xl ">
+      <span class="text-red-500 font-bold">
+        Lionel Andrés <span class="text-9xl">Messi</span>
+      </span>
+      <span class=" text-4xl  font-semibold"> <span class="text-9xl text-green-500">“</span>Every year I try to grow as a player and not get stuck in a rut. I try to
+        improve my game in every way possible. <br><span class="text-9xl text-green-500">”</span></span>
+    </div>
+
+    </div>
+    </div>
+  </section>
+  <section id="biography" class=" px-10 bg-gray-900">
+    <div class="text-6xl text-white   pt-5">
+      Biography
+    </div>
+<div class="image-text flex justify-between mt-20 items-center">
+<img width="400px" class="rounded-xl ring-4 ring-gray-200 shadow-md shadow-gray-200 bg-gray-800" src="./lionel-messi-4k-wallpaper-58466d58c0a0cce8f0dc917e3812a4da (2).jpg" loading="lazy" >
+<span class="ml-20 text-2xl text-gray-200">Lionel Messi is an Argentine football player widely considered to be one of the greatest of all time. He rose to prominence playing for Barcelona, winning numerous titles and breaking records. Messi has also had a successful international career, helping lead the Argentine national team to the World Cup final in 2014. He has won seven Ballon d'Or awards and continues to inspire a new generation of footballers with his exceptional talent and dedication to the sport.
+  Despite his success on the pitch, Messi has also faced challenges off the field, including struggles with injuries and legal issues. However, he has remained dedicated to his sport and to his fans, and he continues to be a beloved figure in the world of football.
+
+Today, Messi remains one of the most recognizable and admired athletes in the world, known not just for his exceptional talent but also for his humility, generosity, and sportsmanship. He continues to inspire a new generation of footballers with his unwavering dedication to the sport and his relentless pursuit of excellence.
+</span>
+</div>
+  </section>
+  <section id="galary" class="bg-gray-900 pb-5">
+    <div class="text-6xl text-white  px-10 pt-5">
+      Galary
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/656/56472547-world-player-of-the-year-winner-ronaldinho-the-gillette_crop_exact.jpg"
+          loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/657/72147386-argentine-players-react-after-losing-2-1-to-spain-in-the_crop_exact.jpg"
+          loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/659/80035564-lionel-messi-of-barcelona-duels-for-the-ball-with-raul_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/662/88019353-lionel-messi-of-barcelona-lifts-the-trophy-as-he-and-his_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/664/94989930-argentinas-lionel-messi-receives-the-2009-fifa-world_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/665/98288329-lionel-messi-of-barcelona-celebrates-scoring-their_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/669/102303462-lionel-messi-captain-of-argentina-looks-on-with-juan_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/666/107959494-lionel-messi-of-argentina-and-barcelona-fc-receives-the_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/671/114915022-lionel-messi-of-fc-barcelona-celebrates-scoring-his_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/673/121301914-lionel-messi-of-barcelona-scores-past-iker-casillas-of_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/675/136629238-lionel-messi-of-barcelona-receives-the-fifa-ballon-dor_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/677/146048310-lionel-messi-of-argentina-reacts-after-scoring-his_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/678/158030314-lionel-messi-of-fc-barcelona-gives-his-thumbs-up-during_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/679/159072929-lionel-messi-of-argentina-receives-the-fifa-ballon-dor_crop_exact.jpg" loading="lazy">
+      </div>
+      <div class="overflow-hidden ring-4 ring-white bg-gray-800">
+        <img class="w-full hover:scale-125 duration-[2000ms]"
+          src="https://media.bleacherreport.com/w_800,h_533,c_fill/br-img-slides/003/472/680/163569085-lionel-messi-of-fc-barcelona-celebrates-after-scoring_crop_exact.jpg" loading="lazy">
+      </div>
+    </div>
+
+
+  </section>
+<hr>
+<footer class="bg-gray-900 text-white text-4xl font-semibold text-center py-10">
+Made By <a class="" href="https://swastikdan.tech">Swastik Dan</a>
+</footer>
+  <script src="./script.js">
+
+  </script>
 </body>
 
 </html>
-
